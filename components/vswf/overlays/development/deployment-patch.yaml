@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: vswf
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-gfes-tenant/byoc-app-pqhx/vswf@sha256:477b17b81fc62066ad01eaab203168d5441187c3660fa8db14b8a8c789b1c811
+        name: my-java-quarkus
+        resources: {}
+status: {}
